@@ -1,0 +1,22 @@
+{
+  "name": "@mvsde/eleventy-vue",
+  "private": true,
+  "license": "Hippocratic-3.0",
+  "scripts": {
+    "dev": "node --experimental-fetch node_modules/.bin/eleventy --input content --output dist --serve",
+    "build": "node --experimental-fetch node_modules/.bin/eleventy --input content --output dist"
+  },
+  "engines": {
+    "node": ">=17.5"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-vue": "^1.0.0-canary.8",
+    "eslint": "^8.9.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-n": "^14.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^8.4.1"
+  }
+}
