@@ -1,8 +1,11 @@
 const doctype = require('./eleventy/doctypeTransform.js')
 const vue = require('@11ty/eleventy-plugin-vue')
 
-// Relative to `content` directory.
 const DIRECTORIES = {
+  input: 'content',
+  output: 'dist',
+
+  // Relative to `content` directory.
   layouts: '../src/layouts',
   includes: '../src/components',
   data: '../data'
