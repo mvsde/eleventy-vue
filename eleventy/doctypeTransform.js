@@ -8,8 +8,10 @@ const DOCTYPE = '<!DOCTYPE html>'
  * @returns {string}
  */
 module.exports = function (content, outputPath) {
-  // If we’re writing to an HTML file and a Doctype does not already exist.
-  if (outputPath.endsWith('.html') && !content.trim().toLowerCase().startsWith(DOCTYPE)) {
+  const isHTMLFile = outputPath.endsWith('.html')
+  const hasDoctype = content.trim().toLowerCase().startsWith(DOCTYPE)
+
+  if (isHTMLFile && !hasDoctype) {
     return `${DOCTYPE}${content}`
   }
 
