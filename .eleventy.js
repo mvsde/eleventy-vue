@@ -12,14 +12,15 @@ const DIRECTORIES = {
 }
 
 // Relative to current directory.
-const LAYOUTS = [
+const VUE_SFCS = [
+  'content/dev-server.vue',
   'content/index.vue',
   'src/layouts/LBase.vue'
 ]
 
 module.exports = function (config) {
   config.addTransform('doctype', doctype)
-  config.addPlugin(vue, { input: LAYOUTS })
+  config.addPlugin(vue, { input: VUE_SFCS })
 
   return {
     dir: DIRECTORIES

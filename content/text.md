@@ -1,9 +1,11 @@
 ---
-title: Subpage with Text
-description: Using eleventy-plugin-vue to build the layouts for a static site.
+title: Markdown demo
+description: A markdown page that uses a layout written in Vue.
 ---
 
-# Subpage with Text
+# {{ title }}
+
+**{{ description }}**
 
 Dolore occaecati nesciunt laudantium expedita aut eum facere consequatur. Dolorem debitis sapiente delectus. Quia aspernatur voluptas ut aperiam.
 

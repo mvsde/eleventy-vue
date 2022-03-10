@@ -23,7 +23,10 @@ export default {
 
 <template>
   <h1>{{ title }}</h1>
-  <a href="/text/">Subpage with Text</a>
+  <ul>
+    <li><a href="/text/">markdown demo</a></li>
+    <li><a href="/dev-server/">eleventy-dev-server demo</a></li>
+  </ul>
 
   <section>
     <h2>Weather in {{ weather.name }}</h2>
