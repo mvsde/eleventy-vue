@@ -1,5 +1,5 @@
-const doctype = require('./eleventy/doctypeTransform.js')
-const vue = require('@11ty/eleventy-plugin-vue')
+const transformDoctype = require('./eleventy/transform-doctype.js')
+const pluginVue = require('@11ty/eleventy-plugin-vue')
 
 const DIRECTORIES = {
   input: 'content',
@@ -19,8 +19,8 @@ const VUE_SFCS = [
 ]
 
 module.exports = function (config) {
-  config.addTransform('doctype', doctype)
-  config.addPlugin(vue, { input: VUE_SFCS })
+  config.addTransform('doctype', transformDoctype)
+  config.addPlugin(pluginVue, { input: VUE_SFCS })
 
   return {
     dir: DIRECTORIES
