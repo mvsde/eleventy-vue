@@ -10,12 +10,12 @@
     "node": ">=17.5"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.2",
+    "@11ty/eleventy": "^2.0.0-canary.4",
     "@11ty/eleventy-plugin-vue": "^1.0.0-canary.8",
-    "eslint": "^8.10.0",
+    "eslint": "^8.12.0",
     "eslint-config-standard": "^17.0.0-1",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-n": "^15.0.1",
+    "eslint-plugin-n": "^15.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^8.5.0"
   }
